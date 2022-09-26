@@ -142,7 +142,13 @@ body {
 
 .link-contact:hover,
 .link-contact:focus {
-    color: var(--accent-text-color);
+    color: none;
+}
+
+.contact-icon {
+    margin-right: 10px;
+    fill: currentColor;
+
 }
 
 /* hero */
