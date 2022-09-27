@@ -132,6 +132,7 @@ body {
 }
 
 .link-contact {
+    display: flex;
     text-decoration: none;
     color: var(--primary-text-colour);
     font-weight: 500;
@@ -142,13 +143,12 @@ body {
 
 .link-contact:hover,
 .link-contact:focus {
-    color: none;
+    color: var(--accent-text-color);
 }
 
 .contact-icon {
     margin-right: 10px;
     fill: currentColor;
-
 }
 
 /* hero */
@@ -231,6 +231,23 @@ body {
     width: 270px;
 }
 
+.benefit-symbol {
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    fill: currentColor;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--title-text-colour);
+
+    margin-bottom: 10px;
+}
+
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -264,15 +281,6 @@ body {
     padding: 30px;
 }
 
-.title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    color: var(--title-text-colour);
-
-    margin-bottom: 10px;
-}
-
 .team-name {
     font-weight: 500;
     font-size: 16px;
@@ -287,6 +295,25 @@ body {
     letter-spacing: 0.03em;
 }
 
+.client-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-client {
+    padding: 16px 32px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
+    fill: currentColor;
+}
+
+.logo-client:hover,
+.logo-client:focus {
+    border: 1px solid var(--accent-text-color);
+    fill: var(--accent-text-color);
+    cursor: pointer;
+}
+
 /* footer */
 
 .head-footer {
@@ -295,7 +322,7 @@ body {
 }
 
 .footer {
-    display: block;
+    display: flex;
 }
 
 .logo-footer {
@@ -341,11 +368,42 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-/* portfolio page */
-
-.portfolio {
-    /* margin: 94px 0; */
+.connect {
+    margin-top: 12px;
+    margin-left: 94px;
 }
+
+.title-connect {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--hero-text-color);
+    margin-bottom: 20px;
+}
+
+.connect-logo {
+    display: flex;
+}
+
+.sn-button {
+    margin-right: 10px;
+}
+
+.sn-logo {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-right: 10px;
+    fill: currentColor;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.sn-logo:hover,
+.sn-logo:focus {
+    background-color: var(--accent-text-color);
+    cursor: pointer;
+}
+
+/* portfolio page */
 
 /* portfolio buttons */
 

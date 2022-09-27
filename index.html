@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header class="header">
@@ -27,21 +27,25 @@
             </div>
             </nav>
             <div class="main-cont">
-                <svg class="contact-icon" width="16" height="12">
+                <!-- проблема з розташуванням svg -->
+                <a class="link-contact contact-item" href="mailto:info@devstudio.com">
+                    <svg class="contact-icon" width="16" height="12">
                     <use href="./images/symbol-defs.svg#contact-mail"></use>
-                </svg>
-                <a class="link-contact contact-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
-
-
-                <svg class="contact-icon" width="10" height="16">
+                    </svg>info@devstudio.com
+                </a>
+                <a class="link-contact" href="tel:+380961111111">
+                    <svg class="contact-icon" width="10" height="16">
                     <use href="./images/symbol-defs.svg#contact-phone"></use>
-                </svg>
-                <a class="link-contact" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </svg>+38 096 111 11 11
+                </a>
             </div>
         </div>
     </header>
     <main>
         <section class="head overlay">
+
+            <!-- не відображається фонове забраження на гід -->
+            
             <div class="container">
                 <h1 class="head-title">Ефективні рішення для<br>вашого бізнесу</h1>
                 <div class="head-btn">
@@ -54,18 +58,30 @@
                 <!-- <h2>Переваги компанії</h2> -->
                 <ul class="list benefits-list">
                     <li class="benefit-item">
+                        <svg class="benefit-symbol" width="270" height="120">
+                            <use href="./images/symbol-defs.svg#benefit-antenna"></use>
+                        </svg>
                         <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
                         <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                     </li>
                     <li class="benefit-item">
+                        <svg class="benefit-symbol" width="270" height="120">
+                            <use href="./images/symbol-defs.svg#benefit-clock"></use>
+                        </svg>
                         <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
                         <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </li>
                     <li class="benefit-item">
+                        <svg class="benefit-symbol" width="270" height="120">
+                            <use href="./images/symbol-defs.svg#benefit-diagram"></use>
+                        </svg>
                         <h3 class="title">ПЛАНУВАННЯ</h3>
                         <p>Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
                     <li class="benefit-item">
+                        <svg class="benefit-symbol" width="270" height="120">
+                            <use href="./images/symbol-defs.svg#benefit-astronaut"></use>
+                        </svg>
                         <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                         <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                     </li>
@@ -127,46 +143,82 @@
         <section class="section">
             <div class="container">
                 <h2 class="section-title">Постійні клієнти</h2>
-                <ul class="list">
-                    <li>
-
+                <ul class="list client-list">
+                    <li class="">                        
+                        <svg class="logo-client" width="170px" height="92px">
+                            <use href="./images/symbol-defs.svg#logo-client-1"></use>
+                        </svg>
                     </li>
-                    <li>
-
+                    <li class="">
+                        <svg class="logo-client" width="170px" height="92px">
+                            <use href="./images/symbol-defs.svg#logo-client-2"></use>
+                        </svg>
                     </li>
-                    <li>
-
+                    <li class="">
+                        <svg class="logo-client" width="170px" height="92px">
+                            <use href="./images/symbol-defs.svg#logo-client-3"></use>
+                        </svg>
                     </li>
-                    <li>
-
+                    <li class="">
+                        <svg class="logo-client" width="170px" height="92px">
+                            <use href="./images/symbol-defs.svg#logo-client-4"></use>
+                        </svg>
                     </li>
-                    <li>
-
+                    <li class="">
+                        <svg class="logo-client" width="170px" height="92px">
+                            <use href="./images/symbol-defs.svg#logo-client-5"></use>
+                        </svg>
                     </li>
-                    <li>
-
+                    <li class="">
+                        <svg class="logo-client" width="170px" height="92px">
+                            <use href="./images/symbol-defs.svg#logo-client-6"></use>
+                        </svg>
                     </li>
                 </ul>
             </div>
         </section>
-
     </main>
     <footer class="head-footer">
         <div class="container footer">
             <div>
                 <a class="logo-footer" href="./index.html">Web<span class="logo-accent-footer">Studio</span></a>
+                <ul class="list">
+                    <li class="footer-adress-cont">
+                        <a class="footer-adress" href="https://goo.gl/maps/aK3BdBVCncxGQwm48" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
+                    </li>
+                    <li class="footer-contact-cont">
+                        <a class="footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="footer-contact-cont">
+                        <a class="footer-contact" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="list">
-                <li class="footer-adress-cont">
-                    <a class="footer-adress" href="https://goo.gl/maps/aK3BdBVCncxGQwm48" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
-                </li>
-                <li class="footer-contact-cont">
-                    <a class="footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li class="footer-contact-cont">
-                    <a class="footer-contact" href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-            </ul>
+            <div class="connect">
+                <h3 class="title-connect">ПРИЄДНУЙТЕСЬ</h3>
+                <ul class="list connect-logo">
+                    <li class="sn-button">
+                        <svg class="sn-logo" width="44" height="44">
+                            <use href="./images/symbol-defs.svg#sn-instagram"></use>
+                        </svg>
+                    </li>
+                    <li class="sn-button">
+                        <svg class="sn-logo" width="44" height="44">
+                            <use href="./images/symbol-defs.svg#sn-twitter"></use>
+                        </svg>
+                    </li>
+                    <li class="sn-button">
+                        <svg class="sn-logo" width="44" height="44">
+                            <use href="./images/symbol-defs.svg#sn-facebook"></use>
+                        </svg>
+                    </li>
+                    <li class="sn-button">
+                        <svg class="sn-logo" width="44" height="44">
+                            <use href="./images/symbol-defs.svg#sn-linkedin"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
