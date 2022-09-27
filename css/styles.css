@@ -295,6 +295,35 @@ body {
     letter-spacing: 0.03em;
 }
 
+.connect-team-logo {
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.sn-team-button {
+    margin-right: 0;
+}
+
+.connect-team-logo .sn-team-button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.sn-team-logo {
+    background-color: var(--primary-bgr-color);
+    fill: var(--primary-text-colour);
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.sn-team-logo:hover,
+.sn-team-logo:focus {
+    background-color: var(--accent-text-color);
+    fill: var(--primary-bgr-color);
+    cursor: pointer;
+}
+
 .client-list {
     display: flex;
     justify-content: space-between;
@@ -386,13 +415,16 @@ body {
 }
 
 .sn-button {
+    margin-right: 0;
+}
+
+.connect-logo .sn-button:not(:last-child) {
     margin-right: 10px;
 }
 
 .sn-logo {
     background-color: rgba(255, 255, 255, 0.1);
-    margin-right: 10px;
-    fill: currentColor;
+    fill: var(--hero-text-color);
     padding: 12px;
     border-radius: 50%;
 }
