@@ -133,6 +133,7 @@ body {
 
 .link-contact {
     display: flex;
+    align-items: center;
     text-decoration: none;
     color: var(--primary-text-colour);
     font-weight: 500;
@@ -169,10 +170,11 @@ body {
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)
 ),
-    url(../images/hero-img.jpg);
-    background-size: cover;
-    background-position: center;
+    url(./images/hero-img.jpg);
+
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 
