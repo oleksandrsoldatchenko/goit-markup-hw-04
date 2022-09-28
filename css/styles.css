@@ -314,12 +314,6 @@ body {
     margin-right: 10px;
 }
 
-.sn-team-button:hover,
-.sn-team-button:focus {
-    background-color: var(--accent-text-color);
-    cursor: pointer;
-}
-
 .sn-team-link {
     display: flex;
     align-items: center;
@@ -332,7 +326,9 @@ body {
 
 .sn-team-link:hover,
 .sn-team-link:focus {
+    background-color: var(--accent-text-color);
     fill: var(--hero-text-color);
+    cursor: pointer;
 }
 
 /* .sn-team-logo {
@@ -347,9 +343,9 @@ body {
 .logo-client {
     display: block;
     padding: 16px 32px;
-    border: 1px solid rgba(175, 177, 184, 1);
+    border: 1px solid #AFB1B8;
     border-radius: 4px;
-    fill: currentColor;
+    fill: #AFB1B8;
 }
 
 .logo-client:hover,
@@ -400,6 +396,12 @@ body {
     color: var(--hero-text-color);
 }
 
+.footer-adress:hover,
+.footer-adress:focus {
+    color: var(--accent-text-color);
+    cursor: pointer;
+}
+
 .footer-contact-cont {
     margin-top: 9px;
 }
@@ -411,6 +413,12 @@ body {
     font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contact:hover,
+.footer-contact:focus {
+    color: var(--accent-text-color);
+    cursor: pointer;
 }
 
 .connect {
