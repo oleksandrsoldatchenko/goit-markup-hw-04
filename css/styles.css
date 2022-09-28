@@ -281,7 +281,7 @@ body {
 }
 
 .team-member {
-    padding: 30px;
+    padding: 30px 32px;
 }
 
 .team-name {
@@ -296,37 +296,48 @@ body {
     font-size: 16px;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
 }
 
 .connect-team-logo {
     display: flex;
-    justify-content: center;
-    margin-right: 10px;
-    margin-bottom: 30px;
+    justify-content: space-between;
 }
 
 .sn-team-button {
-    margin-right: 0;
-}
-
-.connect-team-logo .sn-team-button:not(:last-child) {
-    margin-right: 10px;
-}
-
-.sn-team-logo {
-    display: block;
-    background-color: var(--primary-bgr-color);
-    fill: var(--primary-text-colour);
-    padding: 12px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
 }
 
-.sn-team-logo:hover,
-.sn-team-logo:focus {
+.connect-tam-logo .sn-team-button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.sn-team-button:hover,
+.sn-team-button:focus {
     background-color: var(--accent-text-color);
-    fill: var(--primary-bgr-color);
     cursor: pointer;
 }
+
+.sn-team-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: rgba(175, 177, 184, 1);
+}
+
+.sn-team-link:hover,
+.sn-team-link:focus {
+    fill: var(--hero-text-color);
+}
+
+/* .sn-team-logo {
+    fill: rgba(175, 177, 184, 1);
+} */
 
 .client-list {
     display: flex;
@@ -420,23 +431,32 @@ body {
 }
 
 .sn-button {
-    margin-right: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .connect-logo .sn-button:not(:last-child) {
     margin-right: 10px;
 }
 
-.sn-logo {
-    display: block;
-    background-color: rgba(255, 255, 255, 0.1);
-    fill: var(--hero-text-color);
-    padding: 12px;
+.sn-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
+    fill: var(--hero-text-color);
 }
 
-.sn-logo:hover,
-.sn-logo:focus {
+.sn-logo {
+    fill: var(--hero-text-color);
+}
+
+.sn-button:hover,
+.sn-button:focus {
     background-color: var(--accent-text-color);
     cursor: pointer;
 }
