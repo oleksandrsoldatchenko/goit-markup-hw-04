@@ -234,6 +234,7 @@ body {
 }
 
 .benefit-symbol {
+    display: block;
     padding: 25px 100px;
     margin-bottom: 30px;
     background: #F5F4FA;
@@ -313,6 +314,7 @@ body {
 }
 
 .sn-team-logo {
+    display: block;
     background-color: var(--primary-bgr-color);
     fill: var(--primary-text-colour);
     padding: 12px;
@@ -332,6 +334,7 @@ body {
 }
 
 .logo-client {
+    display: block;
     padding: 16px 32px;
     border: 1px solid rgba(175, 177, 184, 1);
     border-radius: 4px;
@@ -425,6 +428,7 @@ body {
 }
 
 .sn-logo {
+    display: block;
     background-color: rgba(255, 255, 255, 0.1);
     fill: var(--hero-text-color);
     padding: 12px;
