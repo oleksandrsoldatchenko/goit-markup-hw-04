@@ -123,7 +123,8 @@ body {
 }
 
 .nav .link:hover,
-.nav .link:focus {
+.nav .link:focus,
+.nav .link:active {
     color: var(--accent-text-color);
 }
 
@@ -143,7 +144,8 @@ body {
 }
 
 .link-contact:hover,
-.link-contact:focus {
+.link-contact:focus,
+.link-contact:active {
     color: var(--accent-text-color);
 }
 
@@ -212,7 +214,8 @@ body {
     text-align: center;}
 
 .btn-blue:hover,
-.btn-blue:focus {
+.btn-blue:focus,
+.btn-blue:active {
     color: var(--accent-text-color);
     background-color: var(--secondary-bgr-color);
     cursor: pointer;
@@ -247,6 +250,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     color: var(--title-text-colour);
+    text-transform: uppercase;
 
     margin-bottom: 10px;
 }
@@ -325,31 +329,32 @@ body {
 }
 
 .sn-team-link:hover,
-.sn-team-link:focus {
+.sn-team-link:focus,
+.sn-team-link:active {
     background-color: var(--accent-text-color);
     fill: var(--hero-text-color);
     cursor: pointer;
 }
-
-/* .sn-team-logo {
-    fill: rgba(175, 177, 184, 1);
-} */
 
 .client-list {
     display: flex;
     justify-content: space-between;
 }
 
-.logo-client {
-    display: block;
-    padding: 16px 32px;
-    border: 1px solid #AFB1B8;
+.client-button {
+    width: 170px;
+    height: 92px;
+    border: 1px solid rgb(175, 177, 184);
+    fill: rgb(175, 177, 184);
     border-radius: 4px;
-    fill: #AFB1B8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.logo-client:hover,
-.logo-client:focus {
+.client-button:hover,
+.client-button:focus,
+.client-button:active {
     border: 1px solid var(--accent-text-color);
     fill: var(--accent-text-color);
     cursor: pointer;
@@ -397,7 +402,8 @@ body {
 }
 
 .footer-adress:hover,
-.footer-adress:focus {
+.footer-adress:focus,
+.footer-adress:active {
     color: var(--accent-text-color);
     cursor: pointer;
 }
@@ -416,8 +422,9 @@ body {
 }
 
 .footer-contact:hover,
-.footer-contact:focus {
-    color: var(--accent-text-color);
+.footer-contact:focus,
+.footer-contact:active {
+    color: var(--hero-text-color);
     cursor: pointer;
 }
 
@@ -442,7 +449,7 @@ body {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
+
 }
 
 .connect-logo .sn-button:not(:last-child) {
@@ -456,15 +463,12 @@ body {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
     fill: var(--hero-text-color);
 }
 
-.sn-logo {
-    fill: var(--hero-text-color);
-}
-
-.sn-button:hover,
-.sn-button:focus {
+.sn-link:hover,
+.sn-link:focus {
     background-color: var(--accent-text-color);
     cursor: pointer;
 }
@@ -529,7 +533,8 @@ body {
 }
 
 .portfolio-list:hover,
-.portfolio-list:focus {
+.portfolio-list:focus,
+.portfolio-list:active {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
